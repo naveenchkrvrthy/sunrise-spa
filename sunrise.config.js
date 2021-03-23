@@ -34,37 +34,21 @@ export default {
   },
   languages: {
     en: "English",
-    de: "Deutsch",
   },
   countries: {
-    DE: "Deutschland",
-    US: "United States",
+    IN: "India",
   },
   formats: {
     number: {
-      DE: {
+      IN: {
         currency: {
           style: "currency",
-          currency: "EUR",
-          currencyDisplay: "symbol",
-        },
-      },
-      US: {
-        currency: {
-          style: "currency",
-          currency: "USD",
+          currency: "INR",
         },
       },
     },
     datetime: {
-      US: {
-        short: {
-          year: "numeric",
-          month: "short",
-          day: "numeric",
-        },
-      },
-      DE: {
+      IN: {
         short: {
           year: "numeric",
           month: "short",
@@ -78,44 +62,25 @@ export default {
   },
   facetSearches: [
     {
-      name: "size",
-      type: "text",
-      label: {
-        it: "Size",
-        de: "Größe",
-        en: "Size",
-      },
-    },
-    {
-      name: "color",
+      name: "sofa-style",
       type: "lnum",
-      component: "colors",
       label: {
-        de: "Farbe",
-        it: "Color",
-        en: "Color",
+        en: "Style",
       },
     },
     {
-      name: "designer",
-      type: "enum",
-      component: "designer",
+      name: "sofa-color",
+      type: "lnum",
       label: {
-        it: "Designer",
-        de: "Designer",
-        en: "Designer",
+        en: "Color",
       },
     },
   ],
   detailAttributes: [
-    "designer",
-    "colorFreeDefinition",
-    "size",
-    "style",
-    "gender",
-    "articleNumberManufacturer",
+    "sofa-color",
+    "sofa-style",
   ],
-  variantSelector: ["color", "size"],
-  variantInProductName: ["size"],
+  variantSelector: ["sofa-color", "sofa-style"],
+//  variantInProductName: ["size"],
   ...localConfig
 };
