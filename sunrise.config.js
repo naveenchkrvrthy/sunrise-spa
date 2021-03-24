@@ -81,6 +81,6 @@ export default {
     "sofa-style",
   ],
   variantSelector: ["sofa-color", "sofa-style"],
-//  variantInProductName: ["size"],
+  variantInProductName: ["sofa-color"],
   ...localConfig
 };
